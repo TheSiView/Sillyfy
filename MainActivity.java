@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.stopButton:
             if (mediaPlayer != null) {
                 mediaPlayer.stop();
+                mediaPlayer.start();
                 stopMusic();
             }
             break;
