@@ -20,33 +20,45 @@
         />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_centerVertical="true">
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
 
         <ImageButton
             android:id="@+id/playButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@android:drawable/ic_media_play"
-            android:onClick="music"/>
+            android:onClick="music"
+            app:srcCompat="@android:drawable/ic_media_play" />
 
         <ImageButton
             android:id="@+id/pauseButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@android:drawable/ic_media_pause"
-            android:onClick="music"/>
+            android:onClick="music"
+            app:srcCompat="@android:drawable/ic_media_pause" />
 
         <ImageButton
             android:id="@+id/stopButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@android:drawable/picture_frame" />
+            android:onClick="music"
+            app:srcCompat="@android:drawable/ic_media_rew" />
+
     </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/songLength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="186dp"
+        android:layout_marginBottom="29dp" />
 
 </RelativeLayout>
