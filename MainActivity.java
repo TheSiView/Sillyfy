@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                 mediaPlayer.pause();
             }
             break;
-            case R.id.stopButton:
+            case R.id.rewindButton:
             if (mediaPlayer != null) {
                 mediaPlayer.stop();
                 mediaPlayer.start();
