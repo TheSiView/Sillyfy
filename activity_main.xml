@@ -77,7 +77,7 @@
         android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/songLength"
         android:layout_alignBottom="@+id/songLength"
-        android:layout_marginEnd="1dp"
+        android:layout_marginEnd="0dp"
         android:layout_marginBottom="27dp"
         android:text="0:00" />
 

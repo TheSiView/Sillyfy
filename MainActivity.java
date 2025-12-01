@@ -34,9 +34,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                     @Override
-                    public void onCompletion(MediaPlayer mp) {
-                        stopMusic();
-                    }
+                    public void onCompletion(MediaPlayer mp) {stopMusic();}
                 });
             mediaPlayer.start();
             break;
