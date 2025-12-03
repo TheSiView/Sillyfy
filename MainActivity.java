@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onCompletion(MediaPlayer mp) {stopMusic();}
                 });
+
             mediaPlayer.start();
             break;
             case R.id.pauseButton:
