@@ -101,12 +101,8 @@ public class MainActivity extends AppCompatActivity {
                 handler.postDelayed(updateSeekBar, 100);
             }
         });
-
-        // Start updating seek bar
         handler.postDelayed(updateSeekBar, 100);
     }
-
-    // Runnable to update seek bar position
     private Runnable updateSeekBar = new Runnable() {
         @Override
         public void run() {
@@ -114,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
                 int currentPosition = mediaPlayer.getCurrentPosition();
                 songLength.setProgress(currentPosition);
             }
-            handler.postDelayed(this, 100); // Update every 100ms
+            handler.postDelayed(this, 100);
         }
     };
 }
