@@ -79,7 +79,6 @@ public class MainActivity extends AppCompatActivity {
 
     private SeekBar songLength;
     private final Handler handler = new Handler();
-
     private void setupSeekBar() {
         songLength.setMax(mediaPlayer.getDuration());
         songLength.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
